@@ -27,6 +27,7 @@ test:
     - pyqt
   imports:
     - qtpy
+    - qtpy.QtGui
 
 about:
   home: https://github.com/spyder-ide/qtpy
