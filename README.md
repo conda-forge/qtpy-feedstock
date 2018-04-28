@@ -14,14 +14,16 @@ Summary: A uniform layer to support PyQt5, PyQt4 and PySide with a single codeba
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/qtpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/qtpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/qtpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/qtpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/qtpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/qtpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/qtpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/qtpy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/qtpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/qtpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/qtpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/qtpy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/qtpy/badges/version.svg)](https://anaconda.org/conda-forge/qtpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/qtpy/badges/downloads.svg)](https://anaconda.org/conda-forge/qtpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-qtpy-green.svg)](https://anaconda.org/conda-forge/qtpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qtpy.svg)](https://anaconda.org/conda-forge/qtpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qtpy.svg)](https://anaconda.org/conda-forge/qtpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qtpy.svg)](https://anaconda.org/conda-forge/qtpy) |
 
 Installing qtpy
 ===============
