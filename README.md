@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About qtpy
 ==========
 
@@ -18,8 +14,17 @@ Summary: A uniform layer to support PyQt5, PyQt4 and PySide with a single codeba
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/qtpy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/qtpy-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6017&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtpy-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
