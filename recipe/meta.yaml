@@ -39,6 +39,5 @@ about:
 extra:
   recipe-maintainers:
     - ccordoba12
-    - goanpeca
     - astrofrog-conda-forge
     - Nodd
