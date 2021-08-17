@@ -18,11 +18,11 @@ requirements:
 
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
 
   run:
-    - python
+    - python >=3.6
 
 test:
   requires:
@@ -42,3 +42,4 @@ extra:
     - ccordoba12
     - astrofrog-conda-forge
     - Nodd
+    - dalthviz
