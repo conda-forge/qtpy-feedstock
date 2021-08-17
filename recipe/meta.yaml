@@ -1,18 +1,18 @@
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: qtpy
-  version: {{version}}
+  version: {{ version }}
 
 source:
-  fn: qtpy-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/q/qtpy/QtPy-{{version}}.tar.gz
-  sha256: 2db72c44b55d0fe1407be8fba35c838ad0d6d3bb81f23007886dc1fc0f459c8d
+  fn: qtpy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/q/qtpy/QtPy-{{ version }}.tar.gz
+  sha256: 3d20f010caa3b2c04835d6a2f66f8873b041bdaf7a76085c2a0d7890cdd65ea9
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
 
@@ -34,6 +34,7 @@ test:
 about:
   home: https://github.com/spyder-ide/qtpy
   license: MIT
+  license_file: LICENSE.txt
   summary: A uniform layer to support PyQt5, PyQt4 and PySide with a single codebase
 
 extra:
