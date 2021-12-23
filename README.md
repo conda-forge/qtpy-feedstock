@@ -116,7 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@Nodd](https://github.com/Nodd/)
 * [@astrofrog-conda-forge](https://github.com/astrofrog-conda-forge/)
 * [@ccordoba12](https://github.com/ccordoba12/)
 * [@dalthviz](https://github.com/dalthviz/)
