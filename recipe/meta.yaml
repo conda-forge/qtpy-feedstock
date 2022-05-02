@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: qtpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: qtpy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/q/qtpy/QtPy-{{ version }}.tar.gz
-  sha256: adfd073ffbd2de81dc7aaa0b983499ef5c59c96adcfdcc9dea60d42ca885eb8f
+  sha256: ca8cd4217175186344299ee4c0f7e7adcf362c70852ba35b255a534077025c06
 
 build:
   noarch: python
