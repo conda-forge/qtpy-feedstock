@@ -1,11 +1,11 @@
-About qtpy
-==========
+About qtpy-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qtpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/spyder-ide/qtpy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qtpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A uniform layer to support PyQt5, PyQt4 and PySide with a single codebase
 
@@ -143,6 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@CAM-Gerlach](https://github.com/CAM-Gerlach/)
 * [@astrofrog-conda-forge](https://github.com/astrofrog-conda-forge/)
 * [@ccordoba12](https://github.com/ccordoba12/)
 * [@dalthviz](https://github.com/dalthviz/)
