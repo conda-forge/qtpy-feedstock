@@ -30,10 +30,19 @@ requirements:
 
 test:
   requires:
-    - pyqt
+    - pip
+    - pyqt >= 5.9
   imports:
     - {{ import }}
+    - {{ import }}.QtCore
     - {{ import }}.QtGui
+    - {{ import }}.QtWidgets
+  commands:
+    - pip check
+    - {{ entrypoint }}
+    - {{ entrypoint }} --help
+    - {{ entrypoint }} --version
+    - {{ entrypoint }} mypy-args
 
 about:
   home: https://github.com/spyder-ide/qtpy
