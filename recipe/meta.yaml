@@ -33,7 +33,17 @@ about:
   home: https://github.com/spyder-ide/qtpy
   license: MIT
   license_file: LICENSE.txt
-  summary: A uniform layer to support PyQt5, PyQt4 and PySide with a single codebase
+  summary: Provides an uniform layer to support PyQt5, PySide2, PyQt6, PySide6 with a single codebase
+  description: |
+    QtPy is a small abstraction layer that lets you write applications using a single API call to either PyQt or PySide.
+
+    It provides support for PyQt5, PyQt6, PySide6, PySide2 (using the Qt5 layout), so you can write your code as if you were using PyQt or PySide directly, but import Qt modules from qtpy instead of PyQt5, PySide2, PyQt6 or PySide6.
+
+    Accordingly, when porting code between different Qt bindings (PyQt vs PySide) or Qt versions (Qt5 vs Qt6), QtPy makes this much more painless, and allows you to easily and incrementally transition between them.
+    QtPy handles incompatibilities and differences between bindings or Qt versions for you while keeping your project running, so you can focus more on your own code and less on keeping track of supporting every Qt version and binding.
+    Furthermore, when you do want to upgrade or support new bindings, it allows you to update your project module by module rather than all at once.
+  doc_url: https://github.com/spyder-ide/qtpy#readme
+  dev_url: https://github.com/spyder-ide/qtpy
 
 extra:
   recipe-maintainers:
