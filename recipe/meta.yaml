@@ -1,20 +1,24 @@
+{% set name = "QtPy" %}
+{% set import = "qtpy" %}
+{% set entrypoint = "qtpy" %}
 {% set version = "2.3.1" %}
+{% set sha256 = "a8c74982d6d172ce124d80cafd39653df78989683f760f2281ba91a6e7b9de8b" %}
 
 package:
-  name: qtpy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: qtpy-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/q/qtpy/QtPy-{{ version }}.tar.gz
-  sha256: a8c74982d6d172ce124d80cafd39653df78989683f760f2281ba91a6e7b9de8b
+  fn: {{ name|lower }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-    - qtpy = qtpy.cli:main
+    - {{ entrypoint }} = {{ import }}.cli:main
 
 requirements:
   host:
@@ -28,8 +32,8 @@ test:
   requires:
     - pyqt
   imports:
-    - qtpy
-    - qtpy.QtGui
+    - {{ import }}
+    - {{ import }}.QtGui
 
 about:
   home: https://github.com/spyder-ide/qtpy
