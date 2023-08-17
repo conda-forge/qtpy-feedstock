@@ -7,7 +7,20 @@ Home: https://github.com/spyder-ide/qtpy
 
 Package license: MIT
 
-Summary: A uniform layer to support PyQt5, PyQt4 and PySide with a single codebase
+Summary: Provides an uniform layer to support PyQt5, PySide2, PyQt6, PySide6 with a single codebase
+
+Development: https://github.com/spyder-ide/qtpy
+
+Documentation: https://github.com/spyder-ide/qtpy#readme
+
+QtPy is a small abstraction layer that lets you write applications using a single API call to either PyQt or PySide.
+
+It provides support for PyQt5, PyQt6, PySide6, PySide2 (using the Qt5 layout), so you can write your code as if you were using PyQt or PySide directly, but import Qt modules from qtpy instead of PyQt5, PySide2, PyQt6 or PySide6.
+
+Accordingly, when porting code between different Qt bindings (PyQt vs PySide) or Qt versions (Qt5 vs Qt6), QtPy makes this much more painless, and allows you to easily and incrementally transition between them.
+QtPy handles incompatibilities and differences between bindings or Qt versions for you while keeping your project running, so you can focus more on your own code and less on keeping track of supporting every Qt version and binding.
+Furthermore, when you do want to upgrade or support new bindings, it allows you to update your project module by module rather than all at once.
+
 
 Current build status
 ====================
@@ -144,7 +157,7 @@ Feedstock Maintainers
 =====================
 
 * [@CAM-Gerlach](https://github.com/CAM-Gerlach/)
-* [@astrofrog-conda-forge](https://github.com/astrofrog-conda-forge/)
+* [@astrofrog](https://github.com/astrofrog/)
 * [@ccordoba12](https://github.com/ccordoba12/)
 * [@dalthviz](https://github.com/dalthviz/)
 
