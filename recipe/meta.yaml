@@ -64,5 +64,5 @@ extra:
   recipe-maintainers:
     - CAM-Gerlach
     - ccordoba12
-    - astrofrog-conda-forge
+    - astrofrog
     - dalthviz
