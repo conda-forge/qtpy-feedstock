@@ -1,8 +1,8 @@
 {% set name = "QtPy" %}
 {% set import = "qtpy" %}
 {% set entrypoint = "qtpy" %}
-{% set version = "2.3.1" %}
-{% set sha256 = "a8c74982d6d172ce124d80cafd39653df78989683f760f2281ba91a6e7b9de8b" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "db2d508167aa6106781565c8da5c6f1487debacba33519cedc35fa8997d424d4" %}
 
 package:
   name: {{ name|lower }}
