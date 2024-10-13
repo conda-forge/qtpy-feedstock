@@ -1,17 +1,12 @@
-{% set name = "QtPy" %}
-{% set import = "qtpy" %}
-{% set entrypoint = "qtpy" %}
 {% set version = "2.4.1" %}
-{% set sha256 = "a5a15ffd519550a1361bdc56ffc07fda56a6af7292f17c7b395d4083af632987" %}
 
 package:
-  name: {{ name|lower }}
+  name: qtpy
   version: {{ version }}
 
 source:
-  fn: {{ name|lower }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/q/qtpy/qtpy-{{ version }}.tar.gz
+  sha256: a5a15ffd519550a1361bdc56ffc07fda56a6af7292f17c7b395d4083af632987
 
 build:
   noarch: python
@@ -24,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - python >=3.7
     - packaging
@@ -33,16 +29,16 @@ test:
     - pip
     - pyqt >= 5.9
   imports:
-    - {{ import }}
-    - {{ import }}.QtCore
-    - {{ import }}.QtGui
-    - {{ import }}.QtWidgets
+    - qtpy
+    - qtpy.QtCore
+    - qtpy.QtGui
+    - qtpy.QtWidgets
   commands:
     - pip check
-    - {{ entrypoint }}
-    - {{ entrypoint }} --help
-    - {{ entrypoint }} --version
-    - {{ entrypoint }} mypy-args
+    - qtpy
+    - qtpy --help
+    - qtpy --version
+    - qtpy mypy-args
 
 about:
   home: https://github.com/spyder-ide/qtpy
