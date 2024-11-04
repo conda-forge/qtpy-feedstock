@@ -1,8 +1,8 @@
 {% set name = "QtPy" %}
 {% set import = "qtpy" %}
 {% set entrypoint = "qtpy" %}
-{% set version = "2.4.1" %}
-{% set sha256 = "a5a15ffd519550a1361bdc56ffc07fda56a6af7292f17c7b395d4083af632987" %}
+{% set version = "2.4.2" %}
+{% set sha256 = "9d6ec91a587cc1495eaebd23130f7619afa5cdd34a277acb87735b4ad7c65156" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   fn: {{ name|lower }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -23,6 +23,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools >=42
     - python >=3.7
   run:
     - python >=3.7
