@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - {{ entrypoint }} = {{ import }}.cli:main
@@ -24,15 +24,16 @@ requirements:
   host:
     - pip
     - setuptools >=42
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - packaging
 
 test:
   requires:
     - pip
     - pyqt >= 5.9
+    - python {{ python_min }}
   imports:
     - {{ import }}
     - {{ import }}.QtCore
