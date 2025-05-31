@@ -9,14 +9,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name|lower }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - {{ entrypoint }} = {{ import }}.cli:main
 
@@ -32,7 +31,7 @@ requirements:
 test:
   requires:
     - pip
-    - pyqt >= 5.9
+    - pyqt >=5.9
     - python {{ python_min }}
   imports:
     - {{ import }}
@@ -59,8 +58,8 @@ about:
     Accordingly, when porting code between different Qt bindings (PyQt vs PySide) or Qt versions (Qt5 vs Qt6), QtPy makes this much more painless, and allows you to easily and incrementally transition between them.
     QtPy handles incompatibilities and differences between bindings or Qt versions for you while keeping your project running, so you can focus more on your own code and less on keeping track of supporting every Qt version and binding.
     Furthermore, when you do want to upgrade or support new bindings, it allows you to update your project module by module rather than all at once.
-  doc_url: https://github.com/spyder-ide/qtpy#readme
   dev_url: https://github.com/spyder-ide/qtpy
+  doc_url: https://github.com/spyder-ide/qtpy/blob/master/README.md
 
 extra:
   recipe-maintainers:
