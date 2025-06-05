@@ -11,7 +11,7 @@ Summary: Provides an uniform layer to support PyQt5, PySide2, PyQt6, PySide6 wit
 
 Development: https://github.com/spyder-ide/qtpy
 
-Documentation: https://github.com/spyder-ide/qtpy#readme
+Documentation: https://github.com/spyder-ide/qtpy/blob/master/README.md
 
 QtPy is a small abstraction layer that lets you write applications using a single API call to either PyQt or PySide.
 
